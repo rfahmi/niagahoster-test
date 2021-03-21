@@ -12,7 +12,8 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    
     <!-- Styles -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -23,12 +24,18 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
     <style>
-    .navbar-sm {
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+    .top-banner {
         height: 44px;
         font-size: 14px;
         color: #333;
     }
-    .navbar-sm small {
+    .top-banner a {
+        color: #333;
+    }
+    .top-banner small {
         height: 10px;
     }
     .navbar-main {
@@ -68,7 +75,7 @@
         font-size: 14px;
         padding-top:68px;
         padding-bottom:16px;
-        font-weight: 600;
+        font-weight: 400;
         color: #aaa;
         background-color: #303030;
     }
@@ -84,7 +91,7 @@
     .footer-social {
         font-family: 'Montserrat', sans-serif;
         font-size: 16px;
-        height: 80px;
+        min-height: 80px;
         font-weight: 600;
         color: #4C4C4C;
         background-color: #F7F7F7;
@@ -92,7 +99,7 @@
     .footer-contact {
         font-family: 'Montserrat', sans-serif;
         font-size: 28px;
-        height: 176px;
+        min-height: 176px;
         font-weight: 400;
         color: #fff;
         background-color: #00A2F3;
@@ -124,7 +131,7 @@
         font-size: 16px;
         font-weight: 400;
     }
-    .benefit-img {
+    .tech-img {
         display: flex;
         height: 195px;
         justify-content: center;
@@ -144,6 +151,8 @@
     }
     .paket {
         color: #4C4C4C;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
     }
     .paket .name {
         font-family: 'Montserrat', sans-serif;
@@ -180,6 +189,14 @@
     .paket button.best {
         color: #fff;
         border: solid 2px #fff;
+        background-color: #00A2F3;
+    }
+    .newsletter-form button {
+        position: absolute;
+        right: 4px;
+        top: 4px;
+        bottom: 4px;
+        font-size: 12px;
         background-color: #00A2F3;
     }
     </style>

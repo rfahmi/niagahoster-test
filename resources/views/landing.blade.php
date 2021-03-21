@@ -78,7 +78,10 @@
         <h3 class="subtitle">{{$paket['subtitle']}}</h3>
         <div class="row d-flex justify-content-center align-items-start">
             @foreach ($paket['type'] as $i)
-            <div class="col-md-3 paket mb-2 p-md-0">
+            <div class="col-md-3 paket mb-2 p-md-0 position-relative">
+                @if ($i['is_best'])   
+                <div class="ribbon ribbon-top-left"><span>Best Seller!</span></div>
+                @endif
                 <ul class="list-group rounded {{$i['is_best'] ? 'border border-primary' : ''}}">
                     <li class="list-group-item name {{$i['is_best'] ? 'bg-primary text-white' : ''}}">{{$i['name']}}</li>
                     <li class="list-group-item price {{$i['is_best'] ? 'bg-primary text-white' : ''}}">
